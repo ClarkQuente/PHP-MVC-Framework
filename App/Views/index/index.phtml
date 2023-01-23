@@ -1,0 +1,12 @@
+<h1>Index</h1>
+<hr>
+
+<?php
+    echo 'IndexController: Chegamos a index.' . '<br />';
+
+    foreach ($this->view->data as $key => $value) {
+        // echo $value . '<br />';
+
+        echo $value->id . ' - ' . $value->descricao . ' - ' . $value->preco . '<br/>';
+    }
+?>

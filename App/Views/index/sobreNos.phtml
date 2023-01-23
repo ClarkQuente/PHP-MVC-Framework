@@ -1,0 +1,12 @@
+<h1>Sobre Nós</h1>
+<hr>
+
+<?php
+    echo 'IndexController: Chegamos ao sobre nós.' . '<br/><br/>';
+
+    foreach ($this->view->data as $key => $value) {
+        // echo $value . '<br />';
+
+        echo $value->titulo . ' - ' . $value->descricao . '<br/>';
+    }
+?>
